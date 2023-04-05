@@ -2,7 +2,9 @@ import axios from 'axios';
 import { createHmac } from 'crypto';
 import dayjs from 'dayjs';
 import { parse } from 'url';
-import { AccountType, BalanceType } from './types.js';
+import type { AccountType, BalanceType } from './types.js';
+import utc from 'dayjs/plugin/utc.js';
+dayjs.extend(utc);
 
 export class HuobiSDK {
   constructor(private url: string, private accessKey: string, private secretKey: string) {
