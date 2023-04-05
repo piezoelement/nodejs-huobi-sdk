@@ -1,10 +1,17 @@
 {
-  "name": "@miro00/nodejs-huobi-sdk",
+  "name": "@piezoelement/nodejs-huobi-sdk",
   "author": {
     "email": "ozvard765@gmail.com",
     "name": "Alexander Miro"
   },
+  "homepage": "https://github.com/miro00/nodejs-huobi-sdk",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miro00/nodejs-huobi-sdk.git"
+  },
+  "license": "MIT",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "description": "Huobi API SDK",
   "type": "module",
   "husky": {
@@ -36,5 +43,6 @@
     "node-fetch": "^3.3.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.2"
-  }
+  },
+  "version": "0.0.2"
 }
