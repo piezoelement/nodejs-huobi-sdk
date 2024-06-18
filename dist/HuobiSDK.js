@@ -79,4 +79,10 @@ export class HuobiSDK {
     async getSymbols() {
         return await this.sendRequest('GET', '/v2/settings/common/symbols');
     }
+    async getTrade(symbol) {
+        return await this.sendPublicRequest('/market/trade', { symbol });
+    }
+    async getOpenTrades(accountId) {
+        return await this.sendRequest('GET', '/v1/order/openOrders');
+    }
 }

@@ -17,7 +17,7 @@ export declare class HuobiSDK {
         type: AccountType;
         subtype: string;
         state: 'working' | 'lock';
-    }>;
+    }[]>;
     /**
      * Get Account Balance of a Specific Account
      * @param accountId
@@ -32,4 +32,6 @@ export declare class HuobiSDK {
     }>;
     getMarketDetail(symbol: string): Promise<any>;
     getSymbols(): Promise<any>;
+    getTrade(symbol: string): Promise<any>;
+    getOpenTrades(accountId: number): Promise<any>;
 }
